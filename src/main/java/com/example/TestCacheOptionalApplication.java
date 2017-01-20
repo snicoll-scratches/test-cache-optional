@@ -32,7 +32,7 @@ public class TestCacheOptionalApplication {
 				return new ConcurrentMapCache(name, CacheBuilder.newBuilder()
 						.expireAfterWrite(60, TimeUnit.SECONDS)
 						.maximumSize(100)
-						.build().asMap(), false);
+						.build().asMap(), true);
 			}
 		};
 	}
