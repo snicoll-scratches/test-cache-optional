@@ -28,9 +28,9 @@ public class TestCacheOptionalApplication {
 			System.out.println("Got " + Arrays.asList(test, test2, test3));
 
 			System.out.println("Computing null 3 times...");
-			Optional<String> empty = fooService.computeFoo("null");
-			Optional<String> empty2 = fooService.computeFoo("null");
-			Optional<String> empty3 = fooService.computeFoo("null");
+			Optional<String> empty = fooService.computeFoo(null);
+			Optional<String> empty2 = fooService.computeFoo(null);
+			Optional<String> empty3 = fooService.computeFoo(null);
 			System.out.println("Got " + Arrays.asList(empty, empty2, empty3));
 		};
 	}
